@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_transfer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Transfer">
+
+    <TextView
+        android:text="Transfer Funds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/titleTextView"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="Checking Balance:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginTop="50dp"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:id="@+id/cBalanceTextView"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginBottom="-1dp"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:text="Balance goes here"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="Savings Balance:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cBalanceTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/textView6" />
+
+    <TextView
+        android:text="Balance goes here"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sBalanceTextView"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignLeft="@+id/cBalanceTextView"
+        android:layout_alignStart="@+id/cBalanceTextView"
+        android:layout_alignRight="@+id/cBalanceTextView"
+        android:layout_alignEnd="@+id/cBalanceTextView" />
+
+    <TextView
+        android:text="Transfer Amount:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:layout_above="@+id/TransferSpinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="54dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:id="@+id/TransferEditText" />
+
+    <Spinner
+        android:id="@+id/TransferSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TransferButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="55dp"
+        android:entries="@array/AccGroup"
+        android:focusableInTouchMode="false"
+        android:prompt="@string/prompt"
+        android:spinnerMode="dialog" />
+
+    <Button
+        android:text="TRANSFER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TransferButton"
+        android:layout_marginBottom="79dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

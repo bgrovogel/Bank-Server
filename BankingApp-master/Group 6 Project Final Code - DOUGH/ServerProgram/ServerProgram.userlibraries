@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="commons-lang3-3.8.1">
+    <archive path="C:/Users/Levi/Documents/471 Proj/ServerProgram/lib/commons-lang3-3.8.1.jar" />
+    <archive path="C:/Users/Levi/Documents/471 Proj/ServerProgram/lib/commons-logging-1.2.jar" />
+    <archive path="C:/Users/Levi/Documents/471 Proj/ServerProgram/lib/hsqldb-2.5.0.jar" />
+    <archive path="C:/Users/Levi/Documents/471 Proj/ServerProgram/lib/jackcess-3.0.1.jar" />
+    <archive path="C:/Users/Levi/Documents/471 Proj/ServerProgram/lib/ucanaccess-5.0.0.jar" />
+  </library>
+</eclipse-userlibraries>
+

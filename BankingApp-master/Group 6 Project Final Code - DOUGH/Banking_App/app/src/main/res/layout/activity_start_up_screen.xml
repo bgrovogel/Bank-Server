@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu">
+
+    <TextView
+        android:id="@+id/D.O.U.G.H"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="52dp"
+        android:text="D.O.U.G.H"
+        android:textSize="50dp" />
+
+    <Button
+        android:text="LOGIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginButton"
+        android:onClick="Login"
+        android:minWidth="200dip"
+        android:layout_below="@+id/D.O.U.G.H"
+        android:layout_alignLeft="@+id/D.O.U.G.H"
+        android:layout_alignStart="@+id/D.O.U.G.H"
+        android:layout_marginTop="26dp"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:text="RESISTER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:id="@+id/Register"
+        android:onClick="Register"
+        android:minWidth="200dip"
+        android:layout_below="@+id/loginButton"
+        android:layout_alignRight="@+id/loginButton"
+        android:layout_alignEnd="@+id/loginButton"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:text="CONTACT US"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:id="@+id/contactus"
+        android:onClick="ContactUs"
+        android:minWidth="200dip"
+        android:layout_below="@+id/Register"
+        android:layout_alignLeft="@+id/Register"
+        android:layout_alignStart="@+id/Register"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:text="HELP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:id="@+id/Help"
+        android:onClick="Help"
+        android:minWidth="200dip"
+        android:layout_below="@+id/contactus"
+        android:layout_alignLeft="@+id/contactus"
+        android:layout_alignStart="@+id/contactus"
+        tools:ignore="OnClick" />
+
+
+</RelativeLayout>
